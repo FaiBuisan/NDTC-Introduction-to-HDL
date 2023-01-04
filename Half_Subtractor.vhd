@@ -1,14 +1,14 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 
-ENTITY Subtractor IS
+ENTITY Half_Subtractor IS
 PORT (A,B: IN STD_LOGIC;
 	DIFF, BRW: OUT STD_LOGIC
 	);
 	
-	END Subtractor;
+	END Half_Subtractor;
 	
-	ARCHITECTURE Behavior OF Subtractor IS
+	ARCHITECTURE Behavior OF Half_Subtractor IS
 	BEGIN
 	
 	DIFF <= A XOR B;
